@@ -10,18 +10,18 @@ body {
 #container {
   height: 100vh;
   display: grid;
-  grid-template-rows: 1fr auto;
+  /* overflow-x: hidden; */
 }
-/* .item-1 {
+.item-1 {
   height: 40px;
 }
 .item-2 {
-  height: 100%;
-} */
-/* .item-3 {
+  height: 94%;
+}
+.item-3 {
   position: relative;
   bottom: 105px;
-} */
+}
 
 @media (max-width: 576px) {
   .item-3 {

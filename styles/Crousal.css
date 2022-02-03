@@ -81,3 +81,15 @@ img {
     height: 799px;
   }
 }
+
+
+@media (max-width: 576px) {
+  .text h1 {
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  .text h4 {
+    bottom: 78%;
+    font-weight: 300;
+  }
+}

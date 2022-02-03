@@ -51,14 +51,14 @@ function openPage(pageName, elmnt, color) {
   
   console.log(tabcontent);
 
-  // for (i = 0; i < tabcontent.length; i++) {
-  //   tabcontent[i].style.display = "none";
-  // }
-  // // this is making the color of all to empty
-  // tablinks = document.getElementsByClassName("tablink");
-  // for (i = 0; i < tablinks.length; i++) {
-  //   tablinks[i].style.backgroundColor = "";
-  // }
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  // this is making the color of all to empty
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
 
   if (pageName !== prevPageName) {
     document.getElementById(pageName).style.display = "block";
