@@ -7,13 +7,27 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-#container {
-  height: 100vh;
+
+.container {
   display: grid;
-  /* overflow-x: hidden; */
+  grid-template-columns: 1fr;
+  grid-template-rows: 0px 932px;
+  height: 100vh;
 }
-.item-1 {
-  height: 40px;
+
+header{
+  background-color: black;
+  grid-column-start:1;
+  grid-column-end: 2;
+  color: white;
+}
+main{
+ background-color: gray;
+}
+
+
+/* .item-1{
+  height: 100px;
 }
 .item-2 {
   height: 94%;
@@ -21,10 +35,10 @@ body {
 .item-3 {
   position: relative;
   bottom: 105px;
-}
+} */
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .item-3 {
     bottom: 125px;
   }
-}
+} */

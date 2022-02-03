@@ -1,9 +1,12 @@
 .navbar {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: grid;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  grid-template-columns: 1fr auto;
   align-items: center;
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
@@ -96,7 +99,7 @@ a {
   .navbar .nav-list {
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    /* padding: 30px; */
   }
   .nav-list li {
     margin: 0 0.4rem;
