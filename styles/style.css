@@ -1,0 +1,30 @@
+@import "./NavBar.css";
+@import "./Crousal.css";
+@import "./Footer.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+#container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+/* .item-1 {
+  height: 40px;
+}
+.item-2 {
+  height: 100%;
+} */
+/* .item-3 {
+  position: relative;
+  bottom: 105px;
+} */
+
+@media (max-width: 576px) {
+  .item-3 {
+    bottom: 125px;
+  }
+}
