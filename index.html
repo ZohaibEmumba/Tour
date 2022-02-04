@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-
     <link rel="stylesheet" href="./styles/style.css">
     <title>Tour Web Page</title>
 </head>
@@ -42,7 +41,7 @@
                 </div>
             </nav>
         </header>
-       
+        <main>
             <div id="crousal">
                 <div class="mySlides fade">
                     <img src="./images/pexels-recal-media-60217.jpg" />
@@ -71,19 +70,26 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
-        
-        <!-- <footer>
-            <div class="tab-class">
-                <button class="tablink" onclick="openPage('Flight', this, '#2c2e3d')"> <i
-                        class="fas fa-fighter-jet"></i>Flight</button>
-                <button class="tablink" onclick="openPage('Hotel', this, '#2c2e3d')"><i
-                        class="fas fa-hotel"></i>Hotel</button>
-                <button class="tablink" onclick="openPage('Car', this, '#2c2e3d')"><i class="fas fa-car"></i> Car
+        </main>
+       <footer>
+            <div class="tab-class" id="tab-Btns">
+                <button class="tablink"> <i
+                        class="fas fa-fighter-jet"></i>Flight
                 </button>
-                <button class="tablink" onclick="openPage('Crusies', this, '#2c2e3d')"> <i
-                        class="fas fa-luggage-cart"></i> Crusies</button>
+                <button class="tablink" ><i
+                        class="fas fa-hotel"></i>Hotel
+                </button>
+                <button class="tablink" >
+                    <i class="fas fa-car"></i> Car
+                </button>
+                <button class="tablink" > <i
+                        class="fas fa-luggage-cart"></i> Crusies
+                </button>
             </div>
-            <div id="Flight" class="tabcontent">
+            <div id="displayContent">
+
+            </div>
+           <!-- <div id="Flight" class="tabcontent">
                 <h3>Flight</h3>
                 <p>Flight is where the heart is..</p>
             </div>
@@ -101,13 +107,9 @@
             <div id="Crusies" class="tabcontent">
                 <h3>Crusies</h3>
                 <p>Who we are and what we do.</p>
-            </div>
-        </footer> -->
+            </div>  -->
+        </footer> 
 
-
-        <!--        <footer class="item-3">
-            
-        </footer> -->
 
     </div>
     <script src="script.js"></script>

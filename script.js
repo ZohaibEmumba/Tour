@@ -41,29 +41,84 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-let prevPageName = "";
+// let prevPageName = "";
 
-function openPage(pageName, elmnt, color) {
-  var i, tabcontent, tablinks;
+// function openPage(pageName, elmnt, color) {
+//   var i, tabcontent, tablinks;
 
-  //this is doing the display none for all the tabs one by one
-  tabcontent = document.getElementsByClassName("tabcontent");
+
+//   //this is doing the display none for all the tabs one by one
+//   tabcontent = document.getElementsByClassName("tabcontent");
+//   const Flight=  document.getElementById("Flight");
+
+//   console.log(Flight);
+
+//   for (i = 0; i < tabcontent.length; i++) {
+//     tabcontent[i].style.display = "none";
+//   }
+//   // this is making the color of all to empty
+//   tablinks = document.getElementsByClassName("tablink");
+//   for (i = 0; i < tablinks.length; i++) {
+//     tablinks[i].style.backgroundColor = "";
+//   }
+
+//   if (pageName !== prevPageName) {
+//     // document.getElementById(pageName).style.display = "block";
+//     // document.getElementById(pageName).style.width = "97.9%";
+//     Flight.classList.toggle('active');
+//     elmnt.style.backgroundColor = color;
+//   }
+//     prevPageName = pageName;
+// }
+
+
+
+
+
+let flight = document.getElementById("Flight");
+let hotel = document.getElementById("Hotel");
+let car = document.getElementById("Car");
+let crusies = document.getElementById("Crusies");
+
+
+
+document.querySelectorAll("button")
+.forEach(btn => {
+  btn.addEventListener('click' , () => {
+
+    const markUp =`
+      <div id="${btn.innerText}" class="tabcontent">
+      <h3>${btn.innerText}</h3>
+      <p>${btn.innerText} is where the heart is..</p>
+      </div>
+` 
+
+
+    console.log(`${btn.innerText}`);
+   
+    // document.getElementById('displayContent').innerHTML = markUp;      
+
+    // if(`${btn.innerText}` === "Flight"){
+     
+      btn.classList.toggle('_active');
+
+      console.log(markUp);
+     document.getElementById('displayContent').innerHTML = markUp;      
+
+  //  }
+  // else if (`${btn.innerText}` === "Hotel"){
+  //   btn.classList.toggle('_active');
+  //   hotel.classList.toggle('active');
+  //   flight.classList.remove('active');
+  // }
+  // else null
   
-  console.log(tabcontent);
+  })
 
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  // this is making the color of all to empty
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
+})
 
-  if (pageName !== prevPageName) {
-    document.getElementById(pageName).style.display = "block";
-    document.getElementById(pageName).style.width = "97.9%";
-    elmnt.style.backgroundColor = color;
-  }
-    prevPageName = pageName;
+function openPage() {
+  // flight.classList.remove('tabcontent')
+  // flightBtn.classList.toggle('_active');
+  // console.log(flight);  
 }
