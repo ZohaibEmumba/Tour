@@ -10,7 +10,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0px 911px;
+  grid-template-rows: 0px auto auto; 
   height: 100vh;
 }
 header {
@@ -24,7 +24,6 @@ main {
 }
 footer {
   position: relative;
-  bottom: 41px;
+  bottom: 96px;
   left: 0;
-  height: 500px;
 }

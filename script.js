@@ -46,7 +46,6 @@ function showSlides(n) {
 // function openPage(pageName, elmnt, color) {
 //   var i, tabcontent, tablinks;
 
-
 //   //this is doing the display none for all the tabs one by one
 //   tabcontent = document.getElementsByClassName("tabcontent");
 //   const Flight=  document.getElementById("Flight");
@@ -71,54 +70,45 @@ function showSlides(n) {
 //     prevPageName = pageName;
 // }
 
+// let flight = document.getElementById("Flight");
+// let hotel = document.getElementById("Hotel");
+// let car = document.getElementById("Car");
+// let crusies = document.getElementById("Crusies");
 
+document.querySelectorAll("button").forEach((btn) => {
+  btn.addEventListener("click", () => {
+//     const markUp = `
+//       <div id="${btn.innerText}" class="tabcontent active">
+//       <h3>${btn.innerText}</h3>
+//       <p>${btn.innerText} is where the heart is..</p>
+//       </div>
+// console.log(`${btn.innerText}`);
+// `;
 
-
-
-let flight = document.getElementById("Flight");
-let hotel = document.getElementById("Hotel");
-let car = document.getElementById("Car");
-let crusies = document.getElementById("Crusies");
-
-
-
-document.querySelectorAll("button")
-.forEach(btn => {
-  btn.addEventListener('click' , () => {
-
-    const markUp =`
-      <div id="${btn.innerText}" class="tabcontent">
-      <h3>${btn.innerText}</h3>
-      <p>${btn.innerText} is where the heart is..</p>
-      </div>
-` 
-
-
-    console.log(`${btn.innerText}`);
-   
-    // document.getElementById('displayContent').innerHTML = markUp;      
-
-    // if(`${btn.innerText}` === "Flight"){
-     
-      btn.classList.toggle('_active');
-
-      console.log(markUp);
-     document.getElementById('displayContent').innerHTML = markUp;      
-
-  //  }
-  // else if (`${btn.innerText}` === "Hotel"){
-  //   btn.classList.toggle('_active');
-  //   hotel.classList.toggle('active');
-  //   flight.classList.remove('active');
-  // }
-  // else null
-  
-  })
-
-})
+if(`${btn.innerText}`){
+  console.log(`${btn.innerText}`);
+    btn.classList.toggle('_active');
+    document.getElementById("Flight").style.marginLeft = "0px";
+    document.getElementById("Flight").style.width = "100%";
+  }
+  else{
+    btn.classList.remove('_active');
+    document.getElementById("Flight").style.marginLeft = "214px";
+    document.getElementById("Flight").style.width = "0%";
+  }
+  });
+});
 
 function openPage() {
   // flight.classList.remove('tabcontent')
   // flightBtn.classList.toggle('_active');
-  // console.log(flight);  
+  // console.log(flight);
 }
+
+//  }
+// else if (`${btn.innerText}` === "Hotel"){
+//   btn.classList.toggle('_active');
+//   hotel.classList.toggle('active');
+//   flight.classList.remove('active');
+// }
+// else null
