@@ -25,9 +25,15 @@ img {
 }
 .dot-controller {
   position: absolute;
-  bottom: 225px;
+  bottom: 122px;
   text-align: center;
   width: 100%;
+  transition: 2s;
+
+}
+.dot-controller.dotactive{
+  bottom: 200px;
+  transition: 2s;
 }
 .dot {
   cursor: pointer;

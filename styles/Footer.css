@@ -18,37 +18,28 @@
 .tablink:hover {
   background-color: #2c2e3d;
 }
-.tablink._active{
+.tablink._active {
   background-color: #2c2e3d;
 }
- .tabcontent {
+.tabcontent {
   z-index: 1;
   color: black;
-  display: grid; 
-  grid-template-columns:100px auto ;
+  display: none;
+  grid-template-columns: 100px auto;
   justify-content: space-around;
-  padding-top: 40px;
-  padding-bottom: 8px;
+  padding: 40px 0 40px 0;
   transition: 2s;
   width: 0;
   background-color: #2c2e3d;
-  margin-left: -400px;
+  margin-left: -90px;
   color: white;
-} 
-
-/* .tabcontent.active {
+}
+.tabcontent.tabactive {
   display: grid;
-  background-color: #2c2e3d;
-  height: 150px;
-  padding: 26px 78px;
-}  */
+  margin-left: 0px;
+  width: 100%;
+}
 
- /* #Hotel,
-#Flight,
-#Car,
-#Crusies {
-
-}  */
 @media (max-width: 992px) {
   .tablink {
     width: 17%;
