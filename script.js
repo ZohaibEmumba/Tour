@@ -1,9 +1,7 @@
 const toggler = document.querySelector(".navbar > .toggler"),
   navListContainer = document.querySelector(".navbar > .nav-list-container");
-const flight = document.getElementById("Flight");
-const hotel = document.getElementById("Hotel");
-const car = document.getElementById("Car");
-const crusies = document.getElementById("Crusies");
+
+
 const footer = document.getElementById("footer");
 const controller = document.getElementById("controller");
 
@@ -39,6 +37,7 @@ function showSlides(n) {
   }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    slides[i].style.height = "calc(100vh - 4px)";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
@@ -49,18 +48,19 @@ function showSlides(n) {
 
 document.querySelectorAll("button").forEach((btn) => {
   btn.addEventListener("click", () => {
+
     btn.classList.toggle("_active");
     footer.classList.toggle("_active");
     controller.classList.toggle("dotactive");
 
     if (`${btn.innerText}` === "Flight") {
-      flight.classList.toggle("tabactive");
+      document.getElementById("Flight").classList.toggle("tabactive");
     } else if (`${btn.innerText}` === "Hotel") {
-      hotel.classList.toggle("tabactive");
+      document.getElementById("Hotel").classList.toggle("tabactive");
     } else if (`${btn.innerText}` === "Car") {
-      car.classList.toggle("tabactive");
+      document.getElementById("Car").classList.toggle("tabactive");
     } else {
-      crusies.classList.toggle("tabactive");
+      document.getElementById("Crusies").classList.toggle("tabactive");
     }
   });
 });

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Tour Web Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <a href="#" class="brand">
+                    <h1 class="logo">TOUR</h1>
+                </a>
+                <button class="toggler">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <div class="nav-list-container">
+                    <ul class="nav-list">
+                        <li id="active"><a href="#">Home</a></li>
+                        <li><a href="#">Tours</a></li>
+                        <li><a href="#">Hotels</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="crousal">
+                <div class="mySlides fade">
+                    <img src="./images/pexels-recal-media-60217.jpg" />
+                    <div class="text">
+                        <h4>EXPLORE OUR MOST TRAVEL AGENCY</h4>
+                        <h1>Our Travel Agency</h1>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/leaves-ga832ecf99_1920.jpg" />
+                    <section class="text">
+                        <h4>EXPLORE OUR MOST TRAVEL AGENCY</h4>
+                        <h1>Our Travel Agency</h1>
+                    </section>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/sea-ge7820314d_1920.jpg " />
+                    <section class="text">
+                        <h4>EXPLORE OUR MOST TRAVEL AGENCY</h4>
+                        <h1>Our Travel Agency</h1>
+                    </section>
+                </div>
+                <div class="dot-controller" id="controller">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </main>
+       <footer id="footer">
+            <div class="tab-class" id="tab-Btns">
+                <button class="tablink"> <i
+                        class="fas fa-fighter-jet"></i>Flight
+                </button>
+                <button class="tablink" ><i
+                        class="fas fa-hotel"></i>Hotel
+                </button>
+                <button class="tablink" >
+                    <i class="fas fa-car"></i> Car
+                </button>
+                <button class="tablink" > <i
+                        class="fas fa-luggage-cart"></i> Crusies
+                </button>
+            </div>
+           <div id="Flight" class="tabcontent">
+                <h3>Flight</h3>
+                <p>Flight is where the heart is..</p>
+            </div>
+
+             <div id="Hotel" class="tabcontent">
+                <h3>Hotel</h3>
+                <p>Some news this fine day!</p>
+            </div>
+
+            <div id="Car" class="tabcontent">
+                <h3>Car</h3>
+                <p>Some news this fine day!.</p>
+            </div>
+
+            <div id="Crusies" class="tabcontent">
+                <h3>Crusies</h3>
+                <p>Who we are and what we do.</p>
+            </div>  
+        </footer> 
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

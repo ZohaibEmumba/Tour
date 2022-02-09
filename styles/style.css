@@ -8,27 +8,22 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0px 900px; 
   height: 100vh;
+}
+main{
+  height: 100vh;
+  background-color: red;
 }
 header {
   background-color: black;
-  grid-column-start: 1;
-  grid-column-end: 2;
   color: white;
-}
-main {
-  height: 100%;
 }
 footer {
   position: relative;
-  bottom: 30px;
+  bottom: 60px;
   left: 0;
-  transition: 2s;
+  transition: 1s ease-in-out;
 }
-
 footer._active {
   bottom: 162px;
 }
