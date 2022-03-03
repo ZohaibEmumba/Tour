@@ -37,7 +37,7 @@ function showSlides(n) {
   }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-    slides[i].style.height = "937px";
+    slides[i].style.height = "calc(100vh - 4px)";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
@@ -54,13 +54,13 @@ document.querySelectorAll("button").forEach((btn) => {
     controller.classList.toggle("dotactive");
 
     if (`${btn.innerText}` === "Flight") {
-      document.getElementById("Flight").classList.toggle("tabactive");
+      document.getElementById("Flight").classList = "tabactive";
     } else if (`${btn.innerText}` === "Hotel") {
-      document.getElementById("Hotel").classList.toggle("tabactive");
+      document.getElementById("Hotel").classList = "tabactive";
     } else if (`${btn.innerText}` === "Car") {
-      document.getElementById("Car").classList.toggle("tabactive");
+      document.getElementById("Car").classList = "tabactive";
     } else {
-      document.getElementById("Crusies").classList.toggle("tabactive");
+      document.getElementById("Crusies").classList = "tabactive";
     }
   });
 });
